@@ -747,7 +747,12 @@ ul { list-style: none; }
   max-width: 34rem;
   margin: 0 auto 2.2rem;
 }
-.contact__cta { display: flex; justify-content: center; }
+.contact__cta { display: flex; justify-content: center; gap: 0.8rem; flex-wrap: wrap; }
+
+@media (max-width: 560px) {
+  .contact__cta { flex-direction: column; align-items: stretch; }
+  .contact__cta .btn { justify-content: center; }
+}
 
 /* ── Footer ────────────────────────────────────────────── */
 .footer {
