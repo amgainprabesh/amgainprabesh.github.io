@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Prabesh Amgain — Builder of AI experiments & visual tools</title>
+<meta name="description" content="Prabesh Amgain — CS student and self-taught builder shipping AI experiments and visual tools in public. LabLoop, Manga-colorizer, Past-Paper-Sprint-Coach and more.">
+<meta name="theme-color" content="#0A0A0C">
+<meta property="og:title" content="Prabesh Amgain — Builder">
+<meta property="og:description" content="AI experiments, visual tools, shipped in public. 23 repos and counting.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230A0A0C'/><text x='50' y='68' font-size='52' font-family='monospace' font-weight='700' fill='%23C6FF4D' text-anchor='middle'>PA</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Space+Grotesk:wght@400;500;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<!-- ══════════ PRELOADER ══════════ -->
+<div class="preloader" id="preloader" aria-hidden="true">
+  <div class="preloader__inner">
+    <span class="preloader__name">Prabesh Amgain</span>
+    <span class="preloader__count mono" id="preloader-count">000</span>
+  </div>
+  <div class="preloader__bar"><span id="preloader-bar"></span></div>
+</div>
+
+<!-- ══════════ CUSTOM CURSOR ══════════ -->
+<div class="cursor cursor--hidden" id="cursor" aria-hidden="true"><div class="cursor__dot"></div><div class="cursor__ring"></div></div>
+
+<!-- ══════════ SCROLL PROGRESS ══════════ -->
+<div class="progress" id="progress" aria-hidden="true"></div>
+
+<!-- ══════════ NAV ══════════ -->
+<header class="nav" id="nav">
+  <a class="nav__logo" href="#top" data-cursor="link">
+    <span class="nav__mark">PA</span>
+    <span class="nav__word">Prabesh Amgain</span>
+  </a>
+  <nav class="nav__links" aria-label="Primary">
+    <a href="#works" data-cursor="link"><span>Works</span></a>
+    <a href="#about" data-cursor="link"><span>About</span></a>
+    <a href="#stack" data-cursor="link"><span>Stack</span></a>
+    <a href="#contact" data-cursor="link"><span>Contact</span></a>
+  </nav>
+  <a class="nav__status" href="mailto:openclaw011@gmail.com" data-cursor="link">
+    <span class="nav__dot"></span><span class="mono">available / building</span>
+  </a>
+</header>
+
+<main id="top">
+
+  <!-- ══════════ HERO ══════════ -->
+  <section class="hero" id="hero">
+    <canvas class="hero__canvas" id="field" aria-hidden="true"></canvas>
+
+    <div class="hero__meta mono" data-hero-fade>
+      <span>Portfolio — 2026</span>
+      <span>23 repos · shipping since 2025</span>
+    </div>
+
+    <h1 class="hero__title" aria-label="AI experiments, visual tools, shipped in public.">
+      <span class="hero__line" data-hero-line>
+        <span class="hero__word">AI</span><span class="hero__word">experiments,</span>
+      </span>
+      <span class="hero__line" data-hero-line>
+        <span class="hero__word">visual</span><span class="hero__word">tools,</span>
+      </span>
+      <span class="hero__line" data-hero-line>
+        <span class="hero__word hero__word--serif">shipped</span><span class="hero__word">in</span><span class="hero__word">public.</span>
+      </span>
+    </h1>
+
+    <div class="hero__foot">
+      <p class="hero__intro" data-hero-fade>
+        I'm <em>Prabesh</em> — a computer science student who designs, builds and
+        ships. From Gemini-powered experiment platforms to a manga colorizer that
+        runs in your browser. 23 repositories of proof.
+      </p>
+      <div class="hero__cta" data-hero-fade>
+        <a class="btn btn--solid" href="#works" data-cursor="link">See the work <span class="btn__arr">↓</span></a>
+        <a class="btn btn--ghost" href="https://github.com/PrabeshAmgain" target="_blank" rel="noopener" data-cursor="link">GitHub <span class="btn__arr">↗</span></a>
+      </div>
+    </div>
+
+    <div class="hero__scroll mono" data-hero-fade>
+      <span class="hero__scroll-line" aria-hidden="true"></span>
+      <span>scroll to explore</span>
+    </div>
+  </section>
+
+  <!-- ══════════ MARQUEE 1 ══════════ -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee__track">
+      <div class="marquee__group">
+        <span>TypeScript</span><i>✳</i><span>Python</span><i>✳</i><span>JavaScript</span><i>✳</i><span>C</span><i>✳</i><span>C++</span><i>✳</i><span>Gemini AI</span><i>✳</i><span>Vercel</span><i>✳</i><span>Git</span><i>✳</i>
+      </div>
+      <div class="marquee__group" aria-hidden="true">
+        <span>TypeScript</span><i>✳</i><span>Python</span><i>✳</i><span>JavaScript</span><i>✳</i><span>C</span><i>✳</i><span>C++</span><i>✳</i><span>Gemini AI</span><i>✳</i><span>Vercel</span><i>✳</i><span>Git</span><i>✳</i>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════════ WORKS ══════════ -->
+  <section class="works section" id="works">
+    <div class="section__head" data-reveal>
+      <span class="section__index mono">01 /</span>
+      <h2 class="section__title">Selected <em>works</em></h2>
+      <span class="section__note mono">what I've shipped — all public</span>
+    </div>
+
+    <div class="works__list">
+
+      <a class="work" href="https://github.com/PrabeshAmgain/LabLoop" target="_blank" rel="noopener" data-cursor="link">
+        <span class="work__index mono">01</span>
+        <span class="work__body">
+          <span class="work__title">LabLoop</span>
+          <span class="work__desc">Platform for rapid AI experimentation &amp; ML workflow simulation — powered by Gemini AI.</span>
+        </span>
+        <span class="work__tags mono"><span>AI</span><span>TypeScript</span><span>Gemini</span></span>
+        <span class="work__year mono">2025–26</span>
+        <span class="work__arrow" aria-hidden="true">↗</span>
+      </a>
+
+      <a class="work" href="https://manga-colorizer-three.vercel.app" target="_blank" rel="noopener" data-cursor="link">
+        <span class="work__index mono">02</span>
+        <span class="work__body">
+          <span class="work__title">Manga-colorizer</span>
+          <span class="work__desc">Colorize any manga page in an instant. Live in the browser.</span>
+        </span>
+        <span class="work__tags mono"><span>AI</span><span>Vision</span><span>TypeScript</span></span>
+        <span class="work__year mono">2025</span>
+        <span class="work__arrow" aria-hidden="true">↗</span>
+      </a>
+
+      <a class="work" href="https://github.com/PrabeshAmgain/Past-Paper-Sprint-Coach" target="_blank" rel="noopener" data-cursor="link">
+        <span class="work__index mono">03</span>
+        <span class="work__body">
+          <span class="work__title">Past-Paper-Sprint-Coach</span>
+          <span class="work__desc">AI study coach that analyzes past exam papers and drills you on what matters.</span>
+        </span>
+        <span class="work__tags mono"><span>AI</span><span>Education</span><span>TypeScript</span></span>
+        <span class="work__year mono">2025</span>
+        <span class="work__arrow" aria-hidden="true">↗</span>
+      </a>
+
+      <a class="work" href="https://visualizer-gules.vercel.app" target="_blank" rel="noopener" data-cursor="link">
+        <span class="work__index mono">04</span>
+        <span class="work__body">
+          <span class="work__title">Search Visualizer</span>
+          <span class="work__desc">Uninformed &amp; informed search algorithms, visualized step by step.</span>
+        </span>
+        <span class="work__tags mono"><span>Algorithms</span><span>Visualization</span><span>JS</span></span>
+        <span class="work__year mono">2025</span>
+        <span class="work__arrow" aria-hidden="true">↗</span>
+      </a>
+
+      <a class="work" href="https://github.com/PrabeshAmgain/phishing-detection" target="_blank" rel="noopener" data-cursor="link">
+        <span class="work__index mono">05</span>
+        <span class="work__body">
+          <span class="work__title">Phishing-detection</span>
+          <span class="work__desc">ML-based detection of phishing URLs before they reach you.</span>
+        </span>
+        <span class="work__tags mono"><span>ML</span><span>Security</span><span>Python</span></span>
+        <span class="work__year mono">2025</span>
+        <span class="work__arrow" aria-hidden="true">↗</span>
+      </a>
+
+      <a class="work" href="https://personal-python-compiler.vercel.app" target="_blank" rel="noopener" data-cursor="link">
+        <span class="work__index mono">06</span>
+        <span class="work__body">
+          <span class="work__title">Personal Python Compiler</span>
+          <span class="work__desc">A Python compiler that runs entirely in your browser.</span>
+        </span>
+        <span class="work__tags mono"><span>Compilers</span><span>Web</span><span>Python</span></span>
+        <span class="work__year mono">2025</span>
+        <span class="work__arrow" aria-hidden="true">↗</span>
+      </a>
+
+      <a class="work" href="https://github.com/PrabeshAmgain/Bike-liscence-exam-" target="_blank" rel="noopener" data-cursor="link">
+        <span class="work__index mono">07</span>
+        <span class="work__body">
+          <span class="work__title">Bike Licence Exam</span>
+          <span class="work__desc">Practice-question generator for the bike trial exam. No more guessing.</span>
+        </span>
+        <span class="work__tags mono"><span>Web</span><span>TypeScript</span></span>
+        <span class="work__year mono">2025</span>
+        <span class="work__arrow" aria-hidden="true">↗</span>
+      </a>
+
+    </div>
+
+    <div class="works__foot" data-reveal>
+      <span class="mono">+16 more repositories</span>
+      <a class="textlink" href="https://github.com/PrabeshAmgain?tab=repositories" target="_blank" rel="noopener" data-cursor="link">all of them on GitHub <span>↗</span></a>
+    </div>
+  </section>
+
+  <!-- ══════════ MANIFESTO / ABOUT ══════════ -->
+  <section class="manifesto section" id="about">
+    <div class="section__head" data-reveal>
+      <span class="section__index mono">02 /</span>
+      <h2 class="section__title">About</h2>
+    </div>
+
+    <div class="manifesto__grid">
+      <figure class="manifesto__figure" data-reveal>
+        <img src="assets/avatar.jpg" alt="GitHub avatar of Prabesh Amgain" width="400" height="400">
+        <figcaption class="mono">Prabesh Amgain — building since 2025</figcaption>
+      </figure>
+
+      <div class="manifesto__text" data-manifesto>
+        <p class="manifesto__lead">Most portfolios tell you what someone <em>can</em> do. This one shows what I've already <em>shipped</em>.</p>
+        <p>It started with coursework — data structures in C, theory of computation in C++, numerical methods in the small hours. Somewhere between the DBMS notes and the OS labs, I started building things that felt <em>alive</em>: a manga colorizer, a browser Python compiler, an AI study coach.</p>
+        <p>I believe in <em>learning in public</em>. Every repo is a lesson; every deploy is a proof. No gatekeeping, no ghost work — just code, shipped.</p>
+      </div>
+    </div>
+
+    <div class="stats" data-reveal>
+      <div class="stat">
+        <span class="stat__num" data-count="23" data-suffix="">0</span>
+        <span class="stat__label mono">public repositories</span>
+      </div>
+      <div class="stat">
+        <span class="stat__num" data-count="8" data-suffix="">0</span>
+        <span class="stat__label mono">languages in the wild</span>
+      </div>
+      <div class="stat">
+        <span class="stat__num" data-count="6" data-suffix="">0</span>
+        <span class="stat__label mono">live deployments</span>
+      </div>
+      <div class="stat">
+        <span class="stat__num" data-count="1" data-suffix="+">0</span>
+        <span class="stat__label mono">year of building</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ MARQUEE 2 ══════════ -->
+  <div class="marquee marquee--alt" aria-hidden="true">
+    <div class="marquee__track">
+      <div class="marquee__group">
+        <span>learn in public</span><i>✳</i><span>ship fast</span><i>✳</i><span>iterate honestly</span><i>✳</i><span>AI-native</span><i>✳</i><span>detail-obsessed</span><i>✳</i>
+      </div>
+      <div class="marquee__group" aria-hidden="true">
+        <span>learn in public</span><i>✳</i><span>ship fast</span><i>✳</i><span>iterate honestly</span><i>✳</i><span>AI-native</span><i>✳</i><span>detail-obsessed</span><i>✳</i>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════════ STACK ══════════ -->
+  <section class="stack section" id="stack">
+    <div class="section__head" data-reveal>
+      <span class="section__index mono">03 /</span>
+      <h2 class="section__title">Stack &amp; <em>tools</em></h2>
+      <span class="section__note mono">what the repos are actually made of</span>
+    </div>
+
+    <div class="stack__cols">
+      <div class="stack__col" data-reveal>
+        <h3 class="stack__label mono">Languages</h3>
+        <ul class="stack__list">
+          <li><span>TypeScript</span><span class="stack__bar" style="--w:100%"><i></i></span><span class="mono">core</span></li>
+          <li><span>Python</span><span class="stack__bar" style="--w:78%"><i></i></span><span class="mono">ML · scripting</span></li>
+          <li><span>JavaScript</span><span class="stack__bar" style="--w:66%"><i></i></span><span class="mono">web</span></li>
+          <li><span>C / C++</span><span class="stack__bar" style="--w:48%"><i></i></span><span class="mono">systems · DSA</span></li>
+          <li><span>HTML / CSS</span><span class="stack__bar" style="--w:60%"><i></i></span><span class="mono">foundation</span></li>
+        </ul>
+      </div>
+      <div class="stack__col" data-reveal>
+        <h3 class="stack__label mono">Platforms &amp; AI</h3>
+        <ul class="stack__list">
+          <li><span>Gemini AI</span><span class="stack__bar" style="--w:100%"><i></i></span><span class="mono">LabLoop · Sprint Coach</span></li>
+          <li><span>Vercel</span><span class="stack__bar" style="--w:85%"><i></i></span><span class="mono">deploys</span></li>
+          <li><span>Git / GitHub</span><span class="stack__bar" style="--w:92%"><i></i></span><span class="mono">23 public repos</span></li>
+          <li><span>Jupyter</span><span class="stack__bar" style="--w:40%"><i></i></span><span class="mono">AI coursework</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ CONTACT ══════════ -->
+  <section class="contact section" id="contact">
+    <div class="section__head" data-reveal>
+      <span class="section__index mono">04 /</span>
+      <h2 class="section__title">Contact</h2>
+    </div>
+    <h3 class="contact__line" data-reveal>Let's build something <em>in public.</em></h3>
+    <p class="contact__sub" data-reveal>Open to internships, collabs and weird project ideas. Say hi — my inbox is always open.</p>
+    <div class="contact__cta" data-reveal>
+      <a class="btn btn--solid btn--big" href="mailto:openclaw011@gmail.com" data-cursor="link">openclaw011@gmail.com <span class="btn__arr">↗</span></a>
+      <a class="btn btn--ghost btn--big" href="https://github.com/amgainprabesh" target="_blank" rel="noopener" data-cursor="link">GitHub <span class="btn__arr">↗</span></a>
+    </div>
+  </section>
+
+</main>
+
+<!-- ══════════ FOOTER ══════════ -->
+<footer class="footer">
+  <div class="footer__inner">
+    <span class="footer__copy mono">© 2026 Prabesh Amgain</span>
+    <span class="footer__made mono">designed &amp; built with intention</span>
+    <a class="footer__top mono" href="#top" data-cursor="link">back to top ↑</a>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

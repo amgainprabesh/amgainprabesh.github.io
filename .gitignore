@@ -1,0 +1,7 @@
+# node_modules — QA driver only, never ship
+node_modules/
+package.json
+package-lock.json
+
+# QA evidence (screenshots + scripts)
+.qa/
